@@ -1,17 +1,28 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* STEP 01: Face-up card */
 
-  min-height: 100vh;
-  background-color: #000;
-  color: #fff;
+:root {
+  --card-size: 100vmin;
+  --font-size: calc(0.825 * var(--card-size));
+  --card-color: #000;
+  --border-color: #363;
+  --border-width: 0.05em;
+  --border-radius: calc(var(--border-width) * 2);
+}
 
+.card {
+  /* Style */
+  background-color: var(--card-color);
+  border: var(--border-width) solid var(--border-color);
+  border-radius: var(--border-radius);
+  box-sizing: border-box;
+
+  /* Size */
+  font-size: var(--font-size);
+  width: var(--card-size);
+  height: var(--card-size);
+
+  /* Centring */
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
