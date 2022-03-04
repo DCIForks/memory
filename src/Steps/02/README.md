@@ -1,25 +1,3 @@
-# Task for Step 03: Turn card over when clicked
-*(See CHANGELOG.md for details of how Step 02 was treated.)*
-
-Turn either card over when it is clicked.
-
-* Display two cards face down, side-by-side or one beneath each other as before.
-* Add an `onClick` event listener to the cards so that they turn over when clicked.
-
-Tips:
-1. Create an array containing two cherry emoji characters
-2. Create an array containing two `false` values, indicating the initial "turned" state of the two cards
-3. Use useState() to track changes to the "turned" state
-4. Use Array.map() on your images array to create an array of `<Card />` components
-5. Use the `index` argument of the `map` callback function to determine what value to use for `turned` for each card.
-6. Remember that, for JavaScript, an *array* is an *address in your computer's RAM space* where the data in the array is stored. If you updated an array and then use a `useState` setter to tell React that you have updated the array, React will just see the same RAM address, and think nothing has changed. You need to call the `useState` setter with a *new* array (at a different RAM address), so that React will pay attention.
-   ```javascript
-   const [ faceDown, setFaceDown ] = useState([ false, false ])
-
-   faceDown[0] = !faceDown[0] // the local faceDown array is updated
-   setFaceDown[...faceDown]   // React sees a clone of the local array
-   ```
-
 
 # Task for Step 02: Create styling for the card back
 *(See CHANGELOG.md) for details of how Step 01 was treated.)*

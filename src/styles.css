@@ -1,12 +1,19 @@
 /* STEP 01: Face-up card */
 
 :root {
-  --card-size: 100vmin;
+  --card-size: min(50vmax, 100vmin);
   --font-size: calc(0.825 * var(--card-size));
   --card-color: #000;
   --border-color: #363;
   --border-width: 0.05em;
   --border-radius: calc(var(--border-width) * 2);
+}
+
+#root {
+  display: flex;
+  justify-content: centre;
+  align-items: centre;
+  flex-direction: column;
 }
 
 .card {
@@ -25,4 +32,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Card back */
+.face-down {
+  background: #363;
+  background: radial-gradient(circle, #242 0%, #363 100%);
+}
+
+@media (min-aspect-ratio: 1/1) {
+  #root {
+    flex-direction: row;
+  }
 }

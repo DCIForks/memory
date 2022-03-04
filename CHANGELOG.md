@@ -1,8 +1,19 @@
 # CHANGE LOG
 
+## Step 02
+
+* Add Steps/03 folder
+* Add hard-coded `turned` property
+* Add .face-down or .face-up className to card
+* Edit CSS
++ Display #root as flex-column
++ Limit --card-size to 50vmax
++ Add rule for .face-down > gradient background
++ Add @media for landscape screen
+
 ## Step 01
 
-1. Steps/01/ renamed as Steps/02] 
+1. Steps/01/ renamed as Steps/02
 2. Add components/Card.jsx
 3. Export <div className="card"> from Card.jsx
 4. Import Card into App.jsx
