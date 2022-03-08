@@ -1,13 +1,3 @@
-# Task for Step 04 (optional): Simulate the cards turning
-
-Simulate the cards turning using CSS. You'll need to add a couple of container elements, and use some 3D styling.
-
-Tutorials:
-(Card Flip)[https://3dtransforms.desandro.com/card-flip
-https://itnext.io/)
-[Flippable CSS Card](flippable-css-card-how-to-create-a-css-card-that-flips-when-you-hover-af1ef763f3d2)
-
-
 # Task for Step 03: Turn card over when clicked
 *(See CHANGELOG.md for details of how Step 02 was treated.)*
 
