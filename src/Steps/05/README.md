@@ -1,11 +1,45 @@
-# Task for Step 04 (optional): Simulate the cards turning
+# Task for Step 05: Display multiple pairs of cards
 
-Simulate the cards turning using CSS. You'll need to add a couple of container elements, and use some 3D styling.
+Create a layout of 30 cards, to fit the viewport. Use the number of rows and columns that maximizes the size of the individual cards.
+
+You can use the full list of 15 fruit and vegetable emoji characters.
+
+```javascript
+const images = [ "🍒", "🍎", "🍏", "🍐", "🍑", "🍓", "🍇", "🍈", "🍉", "🍊", "🍋", "🍌", "🍍", "🍅", "🍆" ]
+```
+### Tips:
+1. Find the aspect ratio of the viewport
+2. Consider a square whose sides are the length of the shortest sides of the viewport
+3. Calculate which proportion of the 30 cards should appear in that square
+4. Find the square root of that number.
+5. Round the square root up to the nearest whole number. This will tell you how many rows and columns of cards can fit into the square.
+6. Divide the shortest side of the viewport by this rounded-up number. This will be the length of the side of each card.
+
+Example: Suppose viewport is 640 pixels by 320 pixels. This gives an aspect-ratio is 2:1. This means that 15 cards must fit into each square half of the viewport. `Math.sqrt(15)` is about `3.873`, but you can't have `3.873` rows or columns: you must have an integer number. You can create `4` rows and columns of cards in each square half of the viewport (or 16 cards in one half and 14 cards in the other.) The length of the side of each card should be the length of the shortest side divided by 4: `320 / 4 = 80px`. And you will have 4 rows and 8 columns... or rather 3 rows with 8 cards and 1 row with 6 cards.
+
+7. To create the layout, you can use one `<div>` for each row of cards, and place the column-count of cards in each row `<div>`. The last row may not contain as many cards as the other rows.
+
+At the end of this step, you should have a responsive layout, where the cards fill the screen optimally, regardless of the aspect ratio. You should be able to click any card to turn it. There won't yet be a limit to the number of cards you can turn.
+
+
+# Task for Step 04 (optional): Simulate turning the cards
+
+Simulate turning the cards using CSS. You'll need to add a container element for each card, and use some 3D styling.
+
+**NOTE: This step is optional. You can skip it if you like.**
+
+It makes the project more fun to work on, but you might prefer to focus on the game logic, and simply adopt the proposed solution by moving on to the next step.
 
 Tutorials:
-(Card Flip)[https://3dtransforms.desandro.com/card-flip
-https://itnext.io/)
-[Flippable CSS Card](flippable-css-card-how-to-create-a-css-card-that-flips-when-you-hover-af1ef763f3d2)
+
+[Card Flip](https://3dtransforms.desandro.com/card-flip)
+
+[Flippable CSS Card](https://itnext.io/flippable-css-card-how-to-create-a-css-card-that-flips-when-you-hover-af1ef763f3d2)
+
+Explanations:
+
+[How CSS Perspective Works](https://css-tricks.com/how-css-perspective-works/
+)
 
 
 # Task for Step 03: Turn card over when clicked

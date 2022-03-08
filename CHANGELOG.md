@@ -1,22 +1,21 @@
 # CHANGE LOG
 
-const images = [
-    "🍒",
-    "🍎",
-    "🍏",
-    "🍐",
-    "🍑",
-    "🍓",
-    "🍇",
-    "🍈",
-    "🍉",
-    "🍊",
-    "🍋",
-    "🍌",
-    "🍍",
-    "🍅",
-    "🍆"
-  ]
+
+## Step 04
+
+Card.jsx
+1. Add div.space wrapper around div.card
+2. Add div.front and div.back inside div.card
+3. Remove `if (!turned) { image = "" }, so image is visible while turning
+styles.css
+1. Add --z-transform custom CSS property
+2. Move size rules from .card to .space
+3. Add rule to make all children of .space the same width and height
+4. Add position, transition and 3d transform rules to .card
+5. Move flex properties from .card to .card div
+6. Add absolute position and hidden backface-visibility to .card div
+7. Move rule for background from .face-down to .back
+8. Add .card.face-up rule for transform
 
 ## Step 03
 
