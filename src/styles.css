@@ -12,8 +12,7 @@
 
 #root {
   display: flex;
-  justify-content: centre;
-  align-items: centre;
+  justify-content: center;
   flex-direction: column;
 }
 
@@ -78,8 +77,7 @@
   transform: var(--z-transform) translateX(-100%) rotateY(180deg);
 }
 
-@media (min-aspect-ratio: 1/1) {
-  #root {
-    flex-direction: row;
-  }
+div.row {
+  display: flex;
+  justify-content: center;
 }

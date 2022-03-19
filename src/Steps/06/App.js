@@ -64,6 +64,7 @@ function App() {
       layout.push(
         <div
           key={key}
+          className="row"
         >
           {rowArray}
         </div>
